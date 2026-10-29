@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api")
+@CrossOrigin(origins = "*") // 백엔드 컨트롤러에 CORS 허용 설정하도록 추가함
 public class BoardController {
   private final PostStore store;
   private final AuthService auth;

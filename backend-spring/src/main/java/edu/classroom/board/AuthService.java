@@ -17,7 +17,7 @@ import java.util.HexFormat;
 @Service
 public class AuthService {
 
-  // application.properties의 app.jwt.* 설정값 주입하기
+  // application.properties의 app.jwt.* 설정값을 주입하기
   @Value("${app.jwt.secret}")
   private String secretHex;
 
